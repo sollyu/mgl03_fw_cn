@@ -11,7 +11,7 @@ Login - "admin", no password.
 # The easy way
 Open telnet session, connect to gateway and run commands:
 ```sh
-wget -O /tmp/curl "https://ghproxy.com/https://raw.githubusercontent.com/sollyu/mgl03_fw_cn/main/firmware/sourceforge/curl" && chmod +x /tmp/curl
+wget -O /tmp/curl "http://master.dl.sourceforge.net/project/mgl03/bin/curl?viasf=1" && chmod +x /tmp/curl
 export PATH="$PATH:/tmp"
 curl -s -k -L -o /tmp/update.sh https://ghproxy.com/https://raw.githubusercontent.com/sollyu/mgl03_fw_cn/main/firmware/mgl03_update.sh && sh /tmp/update.sh
 ```
